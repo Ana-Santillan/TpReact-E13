@@ -32,7 +32,7 @@ const Formulario = () => {
     return (
         <>
             <Form onSubmit={handleSubmit}>
-                <Card>
+                <Card className='fondoCard'>
                     <Card.Body>
                         <Card.Title className='text-center'>
                             <h3>Clima</h3>

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import { Card, Row, Col , Image } from 'react-bootstrap';
 
 const Clima = ({ clima }) => {
     return (
-        <Card className='text-center mt-3'>
+        <Card className='text-center mt-3 fondoCard'>
             <Card.Header><h1>{clima.weather[0].description}</h1></Card.Header>
             <Card.Body>
 
@@ -12,10 +11,10 @@ const Clima = ({ clima }) => {
                         <Image src='../../public/img/clima.png' rounded fluid/>
                     </Col>
                     <Col lg={6}>
-                        <p>temperatura: {clima.main.temp}</p>
-                        <p>temperatura Maxima: {clima.main.temp_max}</p>
-                        <p>temperatura Minima: {clima.main.temp_min}</p>
-                        <p>Precipitaciones: {clima.main.pressure}</p>
+                        <p>Temperatura: {clima.main.temp}</p>
+                        <p>Temperatura Máxima: {clima.main.temp_max}</p>
+                        <p>Temperatura Mínima: {clima.main.temp_min}</p>
+                        <p>Humedad: {clima.main.humidity}%</p>
                     </Col>
                 </Row>
 
